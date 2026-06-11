@@ -1,0 +1,368 @@
+.quiz-premium-wrapper {
+  padding: 30px 10px;
+}
+
+.quiz-header-card {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border-radius: 28px;
+  padding: 35px;
+  margin-bottom: 30px;
+  box-shadow: 0 20px 50px rgba(37, 99, 235, 0.2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.quiz-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.quiz-header-left h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.quiz-header-left p {
+  opacity: 0.95;
+}
+
+.timer-box {
+  min-width: 320px;
+}
+
+.timer-label {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.quiz-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.question-main-card,
+.sidebar-card {
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.question-progress-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #d1d5db;
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.active-dot {
+  background: #2563eb;
+}
+
+.question-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #0f172a;
+}
+
+.answer-card {
+  width: 100%;
+  border: 2px solid #e5e7eb;
+  background: white;
+  border-radius: 18px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 16px;
+  transition: all 0.25s ease;
+}
+
+.answer-card:hover {
+  transform: translateY(-2px);
+  border-color: #2563eb;
+}
+
+.selected-answer {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.answer-letter {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.answer-text {
+  font-size: 1.05rem;
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.quiz-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.navigator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 20px 0 30px;
+}
+
+.nav-question-btn {
+  border: none;
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 700;
+}
+
+.nav-active {
+  background: #2563eb;
+  color: white;
+}
+
+.finish-btn {
+  width: 100%;
+  border: none;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .quiz-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .timer-box {
+    min-width: 100%;
+  }
+}
+body {
+  background: #f8fafc !important;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.premium-home {
+  padding: 20px;
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #6d28d9, #2563eb);
+  color: white;
+  border-radius: 30px;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  box-shadow: 0 20px 60px rgba(37, 99, 235, 0.2);
+}
+
+.hero-left h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-left h1 span {
+  color: #c4b5fd;
+}
+
+.hero-left p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.hello-pill {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-emoji {
+  font-size: 6rem;
+}
+
+.topic-area {
+  margin-top: 50px;
+}
+
+.topic-heading h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.topic-heading p {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.premium-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.topic-card {
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.topic-card:hover {
+  transform: translateY(-8px);
+}
+
+.topic-icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  font-size: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-card .topic-icon {
+  background: #dbeafe;
+}
+
+.green-card .topic-icon {
+  background: #dcfce7;
+}
+
+.orange-card .topic-icon {
+  background: #ffedd5;
+}
+
+.topic-card h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.topic-card p {
+  color: #64748b;
+  min-height: 70px;
+}
+
+.topic-card button {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.blue-card button {
+  background: #2563eb;
+}
+
+.green-card button {
+  background: #16a34a;
+}
+
+.orange-card button {
+  background: #ea580c;
+}
+
+.motivation-card {
+  margin-top: 40px;
+  background: #e0e7ff;
+  padding: 28px;
+  border-radius: 20px;
+  color: #1e3a8a;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 30px;
+  }
+
+  .hero-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-emoji {
+    font-size: 4rem;
+  }
+}
+/* ---- Answer feedback colours ---- */
+.answer-card.correct-answer {
+  background: #dcfce7 !important;
+  border: 2px solid #22c55e !important;
+  color: #15803d !important;
+}
+.answer-card.wrong-answer {
+  background: #fee2e2 !important;
+  border: 2px solid #ef4444 !important;
+  color: #b91c1c !important;
+}
+.answer-card:disabled {
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
+/* ---- Navigator: answered question dots ---- */
+.nav-question-btn.nav-answered {
+  background: #6d28d9;
+  color: #fff;
+  border-color: #6d28d9;
+}
